@@ -1,0 +1,17 @@
+node_modules
+.husky/_
+packages/**/dist
+.DS_Store
+.env
+
+# Yarn 2+ .gitignore
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Copying some data in to be productive, but we don't want to commit it
+aws-exports.js
