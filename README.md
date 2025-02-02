@@ -16,7 +16,7 @@ have some things to figure out. We haven't tested this out on a PC yet.
 
 - `corepack enable` to respect Yarn 4 package manager dependency
 - `yarn` will install all of the project dependencies
-- `yarn start` will
+- `yarn start` will start the projects showcase app (Vite)
 
 ## Projects
 
