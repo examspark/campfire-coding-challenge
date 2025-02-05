@@ -1,7 +1,6 @@
 import { FlatCompat } from "@eslint/eslintrc";
 import pluginJs from "@eslint/js";
 import pluginImport from "eslint-plugin-import";
-import reactCompiler from "eslint-plugin-react-compiler";
 import globals from "globals";
 import tseslint from "typescript-eslint";
 
@@ -19,12 +18,10 @@ export default [
   {
     plugins: {
       import: pluginImport,
-      "react-compiler": reactCompiler,
     },
     rules: {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "error",
-      "react-compiler/react-compiler": "error",
       "import/order": [
         "error",
         {

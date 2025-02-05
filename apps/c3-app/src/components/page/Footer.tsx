@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
+import logo from "../../assets/campfire-logo.png";
 import { VSpace } from "../../routes/DashboardRoute";
-
-import CampfireLogo from "./CampfireLogo";
 
 const StyledFooter = styled.div`
   border-top: solid 1px ${(p) => p.theme?.inputBorderColor ?? "#ddd"};
@@ -55,7 +54,7 @@ export const Footer = () => {
           >
             <StyledPlatformBadgeFlex>
               <div>
-                <CampfireLogo width="112" alt="Campfire Learning Logo" />
+                <img src={logo} width="112" alt="Campfire Learning Logo" />{" "}
               </div>
               {/* <div>Powered by Campfire</div> */}
             </StyledPlatformBadgeFlex>
