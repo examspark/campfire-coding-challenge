@@ -7,18 +7,9 @@
       "import": "./lib/main.ts"
     }
   },
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "build": "tsc",
-    "clean": "rm -rf ./dist",
     "lint": "eslint .",
-    "prepare": "husky",
-    "prepublishOnly": "yarn run build",
-    "test": "echo 'There are no tests 🫠'",
-    "typecheck": "tsc --noEmit",
-    "watch": "yarn build:bundles --watch"
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "styled-components": "^6.1.13"

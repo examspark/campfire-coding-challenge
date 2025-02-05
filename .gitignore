@@ -4,6 +4,8 @@ packages/**/dist
 .DS_Store
 .env
 
+dist
+
 # Yarn 2+ .gitignore
 .yarn/*
 !.yarn/cache
@@ -12,6 +14,3 @@ packages/**/dist
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
-# Copying some data in to be productive, but we don't want to commit it
-aws-exports.js

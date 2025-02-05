@@ -1,9 +1,6 @@
-import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-import { ApplicationContext } from "../../App";
-import logoDark from "../../assets/campfire-logo-dark.png";
 import logo from "../../assets/campfire-logo.png";
 
 const StyledHeader = styled.header`
@@ -19,12 +16,9 @@ const StyledHeader = styled.header`
   transition:
     background-color 0.2s,
     color 0.2s;
-  /* border-bottom: #222; */
   padding: 1rem;
   font-size: 1.5em;
   gap: 0.5rem;
-  /* background-color: ${(p) =>
-    p.theme.name === "light" ? p.theme.surface0 : "#1c2024"}; */
   background-color: #fff;
   box-shadow:
     rgba(50, 50, 93, 0.05) 0px 13px 15px -5px,
@@ -80,13 +74,11 @@ const StyledNavItems = styled.div`
 `;
 
 const Header = () => {
-  const [theme] = useContext(ApplicationContext);
-
   return (
     <>
       <StyledHeader>
         <div style={{ marginBottom: "-0.7rem" }}>
-          <img src={theme === "dark" ? logoDark : logo} height={45} />
+          <img src={logo} height={45} />
         </div>
         <StyledNavContainer>
           <StyledNavItems>

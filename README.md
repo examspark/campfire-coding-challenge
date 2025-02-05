@@ -14,9 +14,23 @@ following [projects](#projects) below to demonstrate:
 NOTE: We're a Mac shop. If you intend to develop this project on a PC, you might
 have some things to figure out. We haven't tested this out on a PC yet.
 
+We recommend developing this project using VS Code, and installing the [recommended extensions](.vscode/extensions.json).
+
+- Node 20
+  - If using nvm, run `nvm install`
 - `corepack enable` to respect Yarn 4 package manager dependency
 - `yarn` will install all of the project dependencies
 - `yarn start` will start the projects showcase app (Vite)
+
+## Usage
+
+This repository uses a few tools for ensuring code quality and consistency.
+
+- `prettier` - maintains formatting consistency
+- `eslint` - maintains code quality
+- `husky` - manages git precommit hooks, which enforce eslint/prettier rules, and [conventional commit](https://www.conventionalcommits.org/en/v1.0.0/) messages
+
+The configuration for all these tools at the root of the repo can mostly be ignored.
 
 ## Projects
 
