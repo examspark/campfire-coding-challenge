@@ -39,5 +39,9 @@
     "typescript": "^5.3.3",
     "typescript-eslint": "^8.15.0"
   },
-  "packageManager": "yarn@4.1.0"
+  "packageManager": "yarn@4.1.0",
+  "dependencies": {
+    "immer": "^10.1.1",
+    "use-immer": "^0.11.0"
+  }
 }

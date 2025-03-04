@@ -4,6 +4,8 @@ packages/**/dist
 .DS_Store
 .env
 
+.idea
+
 dist
 
 # Yarn 2+ .gitignore
